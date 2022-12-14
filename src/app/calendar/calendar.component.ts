@@ -11,7 +11,7 @@ export class CalendarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.httpClient.get('localhost:3000/matches').subscribe(()=>{})
+    this.httpClient.get('http://localhost:3000/matches').subscribe(()=>{})
   }
 
   matches = [];

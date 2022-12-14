@@ -4,7 +4,7 @@
   "scripts": {
     "start": "concurrently \"npm run frontend\" \"npm run backend\"",
     "frontend": "ng serve",
-    "backend": "json-server --nc --watch localMocks/db.json --m localMocks/middleware.js"
+    "backend": "json-server --watch localMocks/db.json --m localMocks/middleware.js"
   },
   "private": true,
   "dependencies": {

@@ -13,6 +13,7 @@ module.exports = (req, res, next) => {
     req.body.id = uuid()
     db[req.path.replace('/', '')].push(req.body);
     fs.writeFileSync("./localMocks/db.json", JSON.stringify(db));
+    next();
     return res.json(req.body);
   }
   next();
