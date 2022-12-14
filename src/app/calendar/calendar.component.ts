@@ -11,23 +11,23 @@ export class CalendarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.httpClient.get('http://localhost:3000/matches').subscribe(()=>{})
+    this.httpClient.get('http://localhost:3000/matches').subscribe((res)=>{this.matches = res})
   }
 
-  matches = [];
+  matches:any = [];
 
-  wedstrijden = [
-    {
-      opponent: 'Hercules',
-      date: '15/12/2022'
-    },
-    {
-      opponent: 'DHSC',
-      date: '15/02/2023'
-    },
-    {
-      opponent: 'JSV',
-      date: '15/01/2023'
-    },
-  ]
+  // wedstrijden = [
+  //   {
+  //     opponent: 'Hercules',
+  //     date: '15/12/2022'
+  //   },
+  //   {
+  //     opponent: 'DHSC',
+  //     date: '15/02/2023'
+  //   },
+  //   {
+  //     opponent: 'JSV',
+  //     date: '15/01/2023'
+  //   },
+  // ]
 }
