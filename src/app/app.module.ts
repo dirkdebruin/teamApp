@@ -8,13 +8,15 @@ import {ProfileComponent} from "./profile/profile.component";
 import {CalendarComponent} from "./calendar/calendar.component";
 import {MatCardModule} from "@angular/material/card";
 import {HttpClientModule} from "@angular/common/http";
+import {TeamComponent} from "./team/team.component";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    CalendarComponent
+    CalendarComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,

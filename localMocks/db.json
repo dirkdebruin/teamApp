@@ -22,5 +22,14 @@
       "date": "30/12/2022",
       "id": "9513fc54-4b1a-4d7e-bb41-b885f0f17e2d"
     }
+  ],
+  "users": [
+    {
+      "firstName": "Dirk",
+      "lastName": "de Bruin",
+      "email": "dirksmail@mail.adres",
+      "rol": "speler",
+      "id": "1e097cf5-3c14-4767-9231-d487a364cd27"
+    }
   ]
 }
