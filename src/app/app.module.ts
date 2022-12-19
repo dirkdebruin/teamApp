@@ -9,6 +9,7 @@ import {CalendarComponent} from "./calendar/calendar.component";
 import {MatCardModule} from "@angular/material/card";
 import {HttpClientModule} from "@angular/common/http";
 import {TeamComponent} from "./team/team.component";
+import {DatePipe} from "@angular/common";
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import {TeamComponent} from "./team/team.component";
     MatCardModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

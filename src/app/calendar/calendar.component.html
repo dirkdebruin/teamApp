@@ -1,5 +1,20 @@
  <mat-card *ngFor="let match of matches" >
     <mat-card-title>Tegenstander: {{match.opponent}}</mat-card-title>
     <mat-card-content>Datum: {{match.date}}</mat-card-content>
+   <mat-card-footer>
+     <button type="editButton" (click)="updateMatch(match.id)">Edit</button>
+     <button type="deleteButton" (click)="deleteMatch(match.id)">Delete</button>
+   </mat-card-footer>
   </mat-card>
+ <div> New Opponent</div>
+ <input type="text" id="opponent" placeholder="VVIJ" (input)="inputNewOpponent($any($event.target).value)"/>
+ <input type="date" id="newDate" (input)="inputNewDate($any($event.target).value)"/>
+
+ <button id="submitButton" type="submit" (click)="newOpponent()">Add Match</button>
+
+ <!--(input)="newMatchDate(date)"
+ //[disabled]="!(newOpponent && newDate)" (click)="addMatch()">Add Match-->
+
+
+
 
