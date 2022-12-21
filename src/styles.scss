@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+$color-primary: black;
+$color-secondary: red;
+$color-tertiary: grey;
+
+.mat-tab {
+  background-color: $color-primary;
+  color: $color-secondary;
+}
+
+.mat-body{
+  background-color: $color-primary;
+  color: $color-tertiary;
+  &:hover {
+    background-color: lighten($color-primary, 20);
+  }
+}
+
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

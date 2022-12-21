@@ -16,7 +16,7 @@ export class CalendarComponent implements OnInit {
     this.httpClient.get('http://localhost:3000/matches').subscribe((res)=>{this.matches = res})
   }
 
-  matches:any = [];
+  matches:any = []; //moet $ erbij en type aangeven is beter
 
 
 

@@ -10,6 +10,13 @@ import {MatCardModule} from "@angular/material/card";
 import {HttpClientModule} from "@angular/common/http";
 import {TeamComponent} from "./team/team.component";
 import {DatePipe} from "@angular/common";
+import {FormsModule} from "@angular/forms";
+import { MatButtonModule} from "@angular/material/button";
+import {MatInputModule} from "@angular/material/input";
+import {MatIconModule} from '@angular/material/icon';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
+
 
 
 @NgModule({
@@ -24,7 +31,12 @@ import {DatePipe} from "@angular/common";
     BrowserAnimationsModule,
     MatTabsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatIconModule,
+    MatDatepickerModule,
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
