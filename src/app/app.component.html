@@ -1,6 +1,39 @@
-<mat-tab-group class="mat-tab-group">
-  <mat-tab class="mat-tab"  label="Home"><img src="/assets/logo-vvij.png">  </mat-tab>
-  <mat-tab class="mat-tab" label="Calendar"> <app-calendar></app-calendar>  </mat-tab>
-  <mat-tab class="mat-tab" label="Team"><app-team></app-team>  </mat-tab>
-  <mat-tab class="mat-tab" label="Profile"> <app-profile></app-profile> </mat-tab>
-</mat-tab-group>
+<p>
+  <mat-toolbar class="mat-elevation-z8">
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+      <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+    </button>
+    <span>Sterrenteam App</span>
+  </mat-toolbar>
+</p>
+<hr>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+<!--    <img class="avatar mat-elevation-z8" src="./assets/logo-vvij.png"/>-->
+<!--    <mat-divider></mat-divider>-->
+    <button mat-button class="menu-button" routerLink="/home">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/calendar">
+      <mat-icon>calendar_today</mat-icon>
+      <span>Calendar</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/team">
+      <mat-icon>group</mat-icon>
+      <span>Team</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/profile">
+      <mat-icon>person</mat-icon>
+      <span>Profile</span>
+    </button>
+    <hr>
+    <button mat-button class="menu-button">
+      <mat-icon>info</mat-icon>
+      <span>Information</span>
+    </button>
+  </mat-sidenav>
+    <mat-sidenav-content class="mat-elevation-z8"><div class="content"> <router-outlet></router-outlet></div></mat-sidenav-content>
+
+</mat-sidenav-container>

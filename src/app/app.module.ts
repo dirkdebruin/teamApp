@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -15,6 +15,11 @@ import { MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatSidenavModule} from "@angular/material/sidenav";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatDividerModule} from "@angular/material/divider";
+import {AppRoutingModule} from "./app-routing.module";
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -25,6 +30,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     ProfileComponent,
     CalendarComponent,
     TeamComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,8 +43,19 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatInputModule,
     MatIconModule,
     MatDatepickerModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatDividerModule,
+    AppRoutingModule
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+
+
+
+
+}
