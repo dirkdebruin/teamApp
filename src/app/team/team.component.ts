@@ -8,10 +8,15 @@ import {HttpClient} from "@angular/common/http";
 })
 
 export class TeamComponent{
+  active = 0;
+
   constructor(private httpClient:HttpClient) {
   }
   ngOnInit() {
     this.httpClient.get('http://localhost:3000/users').subscribe((res)=>{this.users = res})
+  }
+  onTabsChange(event:any){
+    console.log(event)
   }
 
   users:any = [];

@@ -1,11 +1,21 @@
+<mat-tab-group [selectedIndex]="active" (selectedIndexChange)="onTabsChange($event)" mat-align-tabs="center">
+  <mat-tab label="Team Overview">
+    <div>2 tabs met eerste teamoverzicht (spelers, coach) en 2e tab met tabel statistieken</div>
+    <mat-card>
+      <mat-card-content>Voornaam: {{users[0].firstName}}</mat-card-content>
+      <mat-card-content>Achternaam: {{users[0].lastName}}</mat-card-content>
+      <mat-card-content>Rol: {{users[0].rol}}</mat-card-content>
+      <mat-card-content>E-mail: {{users[0].email}}</mat-card-content>
+    </mat-card>
+    <div>Tabel met statistieken: goals, assists, aanwezigheid</div>
+  </mat-tab>
+  <mat-tab label="Statistics" >
+    Statistics Table
+  </mat-tab>
+  <mat-tab label="Add Teammember"><app-addmember></app-addmember></mat-tab>
+</mat-tab-group>
 
-  <div>2 tabs met eerste teamoverzicht (spelers, coach) en 2e tab met tabel statistieken</div>
-  <mat-card>
-    <mat-card-content>Voornaam: {{users[0].firstName}}</mat-card-content>
-    <mat-card-content>Achternaam: {{users[0].lastName}}</mat-card-content>
-    <mat-card-content>Rol: {{users[0].rol}}</mat-card-content>
-    <mat-card-content>E-mail: {{users[0].email}}</mat-card-content>
-  </mat-card>
-  <div>Tabel met statistieken: goals, assists, aanwezigheid</div>
+
+
 
 

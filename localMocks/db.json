@@ -33,6 +33,13 @@
       "email": "dirksmail@mail.adres",
       "rol": "speler",
       "id": "1e097cf5-3c14-4767-9231-d487a364cd27"
+    },
+    {
+      "firstName": "check",
+      "lastName": "last",
+      "email": "mail@adress.nl",
+      "role": "supporter",
+      "id": "109633f2-6c0f-44dd-9ec9-5806b9e2a677"
     }
   ]
 }

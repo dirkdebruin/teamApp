@@ -10,7 +10,8 @@ const routes:Routes = [
   {path:'home', component:HomeComponent},
   {path:'calendar', component:CalendarComponent},
   {path:'profile', component:ProfileComponent},
-  {path: 'team', component:TeamComponent}
+  {path: 'team', component:TeamComponent},
+  {path:'**', redirectTo: '/home'}
 ];
 
 @NgModule({
