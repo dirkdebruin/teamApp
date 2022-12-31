@@ -26,7 +26,12 @@ export class AddmemberComponent {
       console.log(this.memberForm.value)
       this.httpClient.post<any>('http://localhost:3000/users', this.memberForm.value).subscribe((data: { id: any; }) => {
         this.postId = data.id;
+        alert('Member added successfully');
+        this.memberForm.reset();
       })
+
+    }else {
+      alert('Incorrect input')
     }
   }
 

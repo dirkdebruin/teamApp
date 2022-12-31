@@ -31,7 +31,7 @@
       "firstName": "Dirk",
       "lastName": "de Bruin",
       "email": "dirksmail@mail.adres",
-      "rol": "speler",
+      "role": "speler",
       "id": "1e097cf5-3c14-4767-9231-d487a364cd27"
     },
     {
@@ -40,6 +40,20 @@
       "email": "mail@adress.nl",
       "role": "supporter",
       "id": "109633f2-6c0f-44dd-9ec9-5806b9e2a677"
+    },
+    {
+      "firstName": "naam",
+      "lastName": "last",
+      "email": "mailadres@nl",
+      "role": "coach",
+      "id": "a6e9f476-3117-4b58-8beb-7f1d957161e7"
+    },
+    {
+      "firstName": "volgende check",
+      "lastName": "wow",
+      "email": "mail",
+      "role": "coach",
+      "id": "a639ab31-57bf-4970-95d2-99666b393627"
     }
   ]
 }
